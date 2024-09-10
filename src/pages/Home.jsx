@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-Context;
 import { useCart } from "../hooks/useCart";
 import Context from "../context/Context";
 
@@ -10,7 +9,7 @@ const data = {
 };
 
 export default function Home() {
-    const { totalValue } = useContext(Context);
+  const { totalValue } = useContext(Context);
   const { insert, remove } = useCart(data.preco);
 
   return (
